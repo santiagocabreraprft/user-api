@@ -78,10 +78,4 @@ public class UserController {
         userUseCase.deleteUser(id);
         return ResponseEntity.noContent().build();
     }
-
-    @GetMapping("/exists/{email}")
-    public ResponseEntity<Boolean> checkEmailExists(@PathVariable String email) {
-        boolean exists = userUseCase.existsByEmail(email);
-        return ResponseEntity.ok(exists);
-    }
 }

@@ -79,10 +79,4 @@ public class UserService implements UserUseCase {
         }
         userRepositoryPort.deleteById(id);
     }
-
-    @Override
-    @Transactional(readOnly = true)
-    public boolean existsByEmail(String email) {
-        return userRepositoryPort.existsByEmail(email);
-    }
 }

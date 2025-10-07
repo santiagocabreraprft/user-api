@@ -12,5 +12,4 @@ public interface UserUseCase {
     UserResponseDto createUser(UserRequestDto userRequestDto);
     UserResponseDto updateUser(Long id, UserRequestDto userRequestDto);
     void deleteUser(Long id);
-    boolean existsByEmail(String email);
 }
