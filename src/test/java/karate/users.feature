@@ -322,6 +322,8 @@ Feature: User CRUD API Tests
     * def updateData =
       """
       {
+        "firstName": "#(response.firstName)",
+        "lastName": "#(response.lastName)",
         "email": "#(newEmail)",
         "phone": "#(newPhone)"
       }
